@@ -1,0 +1,16 @@
+
+
+:root{
+    --white: #fafafa;
+    --black: black;
+    --blue: #4f9cf0;
+    --blue2: #4f5ff0;
+}
+
+body{
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    background-color: var(--white);
+}
