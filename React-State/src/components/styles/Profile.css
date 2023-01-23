@@ -1,0 +1,53 @@
+
+
+.container{
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 1px var(--blue2);
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.bgimg{
+    border-radius: 10px;
+    width: 500px;
+    height: 200px ;
+    object-fit: cover;
+}
+
+.picDiv{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.myMargin{
+    margin: 0;
+}
+
+.margB{
+    margin-bottom: 0;
+}
+
+.profilepic{
+    margin-top: -50px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    background-color: lightBlue;
+    border-radius: 100px;
+}
+
+.bgImg{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.bio{
+    margin-top: 0;
+}

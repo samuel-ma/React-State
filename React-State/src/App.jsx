@@ -24,7 +24,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div style={{textAlign: "center", fontSize: "smaller", display: "flex",flexDirection: "column", alignItems: "center", justifyContent: "center", width: "100%", height: "615px"}}>
+      <div className="app">
 
         {this.state.show ? <Profile /> : null}
 

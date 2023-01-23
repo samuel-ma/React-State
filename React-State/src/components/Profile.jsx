@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "./styles/Profile.css"
 
 export default class Profile extends Component {
 
@@ -14,25 +15,25 @@ export default class Profile extends Component {
 
     render() {
         return (
-            <div style={{borderRadius: "10px", padding: "10px", border: "solid 1px var(--blue2)", display: "flex", alignItems: "center", flexDirection: "column"}}>
-                <img style={{borderRadius: "10px", width: "500px", height: "200px", objectFit: "cover"}} src={this.state.imgSrc} alt="" /> 
-                <div style={{width: "100%", display: "flex", alignItems: "center", justifyContent: "space-around"}}>
+            <div className="container">
+                <img className='bgimg' src={this.state.imgSrc} alt="" /> 
+                <div className='picDiv'>
                 <div>
-                    <h1 style={{margin: "0"}}>134k</h1>
-                    <p style={{margin: "0"}}>Followers</p>
+                    <h1 className='myMargin'>134k</h1>
+                    <p className='myMargin'>Followers</p>
                 </div>
 
-                <div style={{marginTop: "-50px", display: "flex", alignItems: "center", justifyContent: "center", padding: "7px", backgroundColor: "lightBlue", borderRadius: "100px"}}>
-                    <img style={{width: "120px", height: "120px", objectFit: "cover", borderRadius: "100px"}} src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="" />
+                <div className='profilepic'>
+                    <img className='bgImg' src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="" />
                 </div>
                 <div>
-                    <h1 style={{margin: "0"}}>200</h1>
-                    <p style={{margin: "0"}}>Following</p>
+                    <h1 className='myMargin'>200</h1>
+                    <p className='myMargin'>Following</p>
                 </div>
                 </div>
-                <h1 style={{marginBottom: "0px",}}>{this.state.fullName}</h1>
-                <i style={{marginBottom: "0px",}}>{this.state.profession}</i>
-                <p style={{marginTop: "0px",}}>{this.state.bio}</p>
+                <h1 className='margB'>{this.state.fullName}</h1>
+                <i className='margB'>{this.state.profession}</i>
+                <p className='bio'>{this.state.bio}</p>
         </div>
         )
     }

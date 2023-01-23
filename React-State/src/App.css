@@ -14,3 +14,14 @@ body{
     color: var(--black);
     background-color: var(--white);
 }
+
+.app{
+    display: flex;
+    text-align: center;
+    font-size: smaller;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 615px;
+}
